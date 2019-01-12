@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212845"
+    tools:context=".Main2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppins"
+                android:text="Tic Tac Toe"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/blue_underline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/blue_underline" />
+
+            <LinearLayout
+                android:id="@+id/levelLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blue_underline"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="15"
+                    android:src="@drawable/leftarrow" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="70"
+                    android:fontFamily="@font/poppins"
+                    android:text="Levels"
+                    android:textAlignment="center"
+                    android:textColor="#a9a9a9"
+                    android:textSize="28sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="15"
+                    android:src="@drawable/rightarrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xoboxlinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/levelLinearLayout"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="64dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#216efd" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#216efd" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#216efd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#216efd" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="O"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#216efd" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#216efd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="O"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#216efd" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#216efd" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/xoboxlinearLayout"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/buttonshape"
+                android:fontFamily="@font/poppins"
+                android:text="Challenge"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
