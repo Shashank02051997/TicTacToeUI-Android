@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhinavraj.tictactoe.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="101dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/basic" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageButton5"
+        android:layout_alignStart="@+id/imageButton4"
+        android:layout_marginBottom="58dp"
+        android:background="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_marginEnd="28dp"
+        android:background="#ffffff"/>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageButton8"
+        android:layout_alignStart="@+id/imageButton7"
+        android:layout_marginBottom="42dp"
+        android:background="#ffffff" />
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_marginEnd="28dp"
+        android:background="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="92dp"
+        android:layout_marginStart="35dp"
+        android:background="#ffffff" />
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/imageButton7"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"/>
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageButton8"
+        android:layout_marginEnd="28dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="TIC TAC TOE"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
+</android.widget.RelativeLayout>
